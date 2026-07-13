@@ -1,6 +1,18 @@
 {
-  "name": "@Atlas-Medical-IO/atlas-types",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+    "name": "@Atlas-Medical-IO/atlas-types",
+    "version": "0.0.2",
+    "license": "UNLICENSED",
+    "main": "./lib/index.js",
+    "types": "./lib/index.d.ts",
+    "scripts": {
+        "clean": "rm -rf lib tsconfig.tsbuildinfo",
+        "build": "npx tsc --build --force",
+        "rebuild": "yarn clean && yarn build"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
+    "dependencies": {
+        "typescript": "^7.0.2"
+    }
 }

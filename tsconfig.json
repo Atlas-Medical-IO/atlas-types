@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": [
+      "ES6"
+    ],
+    "composite": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "declaration": true,
+    "declarationMap": true,
+    "strict": true,
+    "rootDir": "./",
+    "outDir": "./lib"
+  }
+}
