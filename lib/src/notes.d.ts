@@ -7,6 +7,6 @@ export interface CreateNoteInput extends NotePayload {
 }
 export interface CreateNoteOutput extends NotePayload {
 }
-export interface getNotesByPatientIdOutput extends NotePayload {
+export interface getNotesByPatientIdOutput extends Array<NotePayload> {
 }
 //# sourceMappingURL=notes.d.ts.map
