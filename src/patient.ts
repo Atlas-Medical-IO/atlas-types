@@ -9,4 +9,6 @@ export type PatientPayload = {
     dateOfBirth: Date | null
 }
 
+export interface CreatePatientInput extends PatientPayload {}
+
 export interface GetProviderPatientsOutput extends Array<PatientPayload>{}

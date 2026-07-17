@@ -8,6 +8,8 @@ export type PatientPayload = {
     personalHealthNumber: string | null;
     dateOfBirth: Date | null;
 };
+export interface CreatePatientInput extends PatientPayload {
+}
 export interface GetProviderPatientsOutput extends Array<PatientPayload> {
 }
 //# sourceMappingURL=patient.d.ts.map
