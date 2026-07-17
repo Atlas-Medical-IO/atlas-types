@@ -17,3 +17,5 @@ export type ProviderHomePageResponse = {
         clinic: { id: string; name: string }
     }[]
 }
+
+export interface getProviderHomePageOutput extends ProviderHomePageResponse {}

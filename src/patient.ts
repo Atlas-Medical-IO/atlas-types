@@ -8,3 +8,5 @@ export type PatientPayload = {
     personalHealthNumber: string | null
     dateOfBirth: Date | null
 }
+
+export interface GetProviderPatientsOutput extends PatientPayload{}[]
