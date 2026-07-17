@@ -10,5 +10,6 @@ export type PatientPayload = {
 }
 
 export interface CreatePatientInput extends PatientPayload {}
+export interface CreatePatientOutput extends PatientPayload {}
 
 export interface GetProviderPatientsOutput extends Array<PatientPayload>{}
