@@ -1,5 +1,6 @@
 export type PersonalData = {
     id: string;
+    userId: string;
     name: string;
     phone: string;
     height: number;
@@ -8,12 +9,14 @@ export type PersonalData = {
     surgicalHistory: string | null;
     allergies: string | null;
     medications: string | null;
-    dateOfBirth: Date;
+    userType: string;
+    dateOfBirth: Date | null;
 };
 export interface GetPersonalDataOutput extends PersonalData {
     fetchedAt: string;
 }
-export interface updatePersonalDataInput extends PersonalData {
+export interface updatePersonalDataInput extends Omit<PersonalData, "id"> {
+    id?: string;
 }
 export interface updatePersonalDataOutput extends PersonalData {
     fetchedAt: string;
