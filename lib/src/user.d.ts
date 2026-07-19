@@ -2,7 +2,7 @@ export type PersonalData = {
     id: string;
     userId: string;
     name: string;
-    phone: string;
+    phn: string;
     height: number;
     weight: number;
     medicalHistory: string | null;
