@@ -27,4 +27,6 @@ export interface DeleteDocumentInput extends DocumentOwnership {
 export interface DeleteDocumentOutput extends DocumentOwnership {
     id: string;
 }
+export interface fetchAllUserDocumentsOutput extends Array<DocumentResponse> {
+}
 //# sourceMappingURL=documents.d.ts.map
