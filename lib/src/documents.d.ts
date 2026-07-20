@@ -1,6 +1,5 @@
 export type DocumentOwnership = {
     userId?: string;
-    patientId?: string;
 };
 export type DocumentResponse = {
     id: string;

@@ -1,4 +1,3 @@
-import { PatientPayload } from "./patient";
 export type ProviderHomePageResponse = {
     id: string;
     name: string;
@@ -7,7 +6,6 @@ export type ProviderHomePageResponse = {
     image: string | null;
     createdAt: Date;
     updatedAt: Date;
-    patients: PatientPayload[];
     clinicMemberships: {
         clinicId: string;
         userId: string;
