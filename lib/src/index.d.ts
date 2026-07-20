@@ -4,4 +4,5 @@ export * from "./error";
 export * from "./dashboard";
 export * from "./notes";
 export * from "./documents";
+export * from "./ai-summary";
 //# sourceMappingURL=index.d.ts.map

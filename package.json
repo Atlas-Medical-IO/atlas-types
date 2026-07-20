@@ -1,6 +1,6 @@
 {
     "name": "@Atlas-Medical-IO/atlas-types",
-    "version": "0.0.18",
+    "version": "0.0.19",
     "license": "UNLICENSED",
     "main": "./lib/index.js",
     "types": "./lib/index.d.ts",
