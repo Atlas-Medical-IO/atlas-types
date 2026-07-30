@@ -2,7 +2,8 @@ export type NotePayload = {
     id: string
     note: string
     isVisible: boolean
-}
+    userId: string
+  }
 
 export interface CreateNoteInput extends NotePayload {}
 export interface CreateNoteOutput extends NotePayload {}
