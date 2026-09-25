@@ -1,5 +1,6 @@
 export type DocumentOwnership = {
     userId?: string;
+    clinicId?: string | null;
 };
 export type DocumentResponse = {
     id: string;
@@ -8,6 +9,7 @@ export type DocumentResponse = {
     eventType: string;
     mimeType: string;
     summary: string;
+    clinicId: string | null;
 };
 export interface UploadDocumentOutput extends DocumentResponse {
 }

@@ -18,6 +18,7 @@ export interface AISummaryContent {
 export type AIGeneralSummaryPayload = {
     id: string;
     userId: string;
+    clinicId: string | null;
     summary: AISummaryContent;
 };
 

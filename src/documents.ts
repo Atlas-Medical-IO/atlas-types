@@ -1,6 +1,9 @@
 // Ownership must satisfy the server's CHECK constraint: exactly one of the two is set.
 export type DocumentOwnership = {
-    userId?: string
+    userId?: string    
+    // Omit/undefined/null = the patient's own personal record. A real
+    // clinicId scopes the document to that clinic's own profile of the patient.
+    clinicId?: string | null
 }
 
 export type DocumentResponse = {
@@ -10,6 +13,7 @@ export type DocumentResponse = {
     eventType: string
     mimeType: string
     summary: string
+    clinicId: string | null
 }
 
 export interface UploadDocumentOutput extends DocumentResponse {}
